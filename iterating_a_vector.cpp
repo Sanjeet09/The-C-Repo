@@ -26,12 +26,20 @@ void printVectorV3(vector <int> &v){
     cout<<endl;
 }
 
+void printVectorV4(vector <int> v){
+    int i;
+    for(i=0;i<v.size();i++)
+        cout<<v[i]<<" ";
+    cout<<endl;
+}
+
 int main() {
     vector <int> v={10,20,30,40,50};
     
     printVector(v);     //10 20 30 40 50 
     printVectorV2(v);     //10 20 30 40 50 
     printVectorV3(v);     //10 20 30 40 50 
+    printVectorV4(v);     ////10 20 30 40 50   
     
     return 0;
 }
