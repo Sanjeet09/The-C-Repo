@@ -20,5 +20,16 @@ int main() {
     v.erase(v.begin(), v.begin()+3);//erases from 1st to 3rd(exclusive) --> [)
     printVector(v);     
     
+    vector <int> v1={25,48,30,14,41,85};
+    vector <int> :: iterator it;
+    
+    for(it=v1.begin(); it!=v1.end(); it++){
+        if( (*it)%5 ==0){
+            v1.erase(it);
+            it--;
+        }
+    }
+    printVector(v1);        //48 14 41 
+    
     return 0;
 }
