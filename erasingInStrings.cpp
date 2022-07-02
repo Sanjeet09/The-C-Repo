@@ -14,7 +14,7 @@ int main(){
     s1.erase(2,6);
     cout<<s1<<endl;
 
-    //Syntax 2 -- s.erase(start_iterator,end_iterator);      erases from start_iterator to end_iterator(exclusive)
+    //Syntax 3 -- s.erase(start_iterator,end_iterator);      erases from start_iterator to end_iterator(exclusive)
     string a="Hello World";
     a.erase(a.begin(), a.begin()+4);
     cout<<a<<endl;
